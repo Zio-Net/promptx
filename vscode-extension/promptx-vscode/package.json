@@ -3,7 +3,7 @@
   "displayName": "PromptX Language Support",
   "description": "Syntax highlighting for PromptX prompt files used by AIEngine",
   "version": "0.3.0",
-  "publisher": "zionet",
+  "publisher": "Zion-Net",
   "license": "SEE LICENSE IN LICENSE.txt",
   "repository": {
     "type": "git",
