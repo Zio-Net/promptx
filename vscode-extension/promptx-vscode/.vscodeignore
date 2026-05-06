@@ -1,0 +1,4 @@
+.vscode/**
+examples/**
+node_modules/**/.bin/**
+*.vsix

@@ -1,0 +1,76 @@
+{
+  "scopeName": "source.promptx",
+  "name": "PromptX",
+  "patterns": [
+    {
+      "include": "#frontmatter"
+    },
+    {
+      "include": "#roleBlocks"
+    },
+    {
+      "include": "#variables"
+    }
+  ],
+  "repository": {
+    "frontmatter": {
+      "patterns": [
+        {
+          "begin": "\\A---\\s*$",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.frontmatter.begin.promptx"
+            }
+          },
+          "end": "^---\\s*$",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.frontmatter.end.promptx"
+            }
+          },
+          "name": "meta.frontmatter.promptx",
+          "patterns": [
+            {
+              "include": "source.yaml"
+            }
+          ]
+        }
+      ]
+    },
+    "roleBlocks": {
+      "patterns": [
+        {
+          "begin": "^(system|user|assistant|developer)(:)([ \\t]*)$",
+          "beginCaptures": {
+            "1": {
+              "name": "keyword.control.promptx"
+            },
+            "2": {
+              "name": "punctuation.separator.key-value.promptx"
+            }
+          },
+          "end": "(?=^(?:system|user|assistant|developer):[ \\t]*$)|\\z",
+          "name": "meta.block.promptx",
+          "patterns": [
+            {
+              "include": "#variables"
+            }
+          ]
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "match": "\\{\\{\\s*([A-Za-z_][A-Za-z0-9_]*)\\s*\\}\\}",
+          "captures": {
+            "1": {
+              "name": "variable.other.promptx"
+            }
+          },
+          "name": "meta.interpolation.promptx"
+        }
+      ]
+    }
+  }
+}

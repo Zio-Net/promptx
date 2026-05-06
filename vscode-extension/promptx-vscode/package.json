@@ -1,0 +1,57 @@
+{
+  "name": "promptx-vscode",
+  "displayName": "PromptX Language Support",
+  "description": "Syntax highlighting for PromptX prompt files used by AIEngine",
+  "version": "0.3.0",
+  "publisher": "zionet",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zio-Net/promptx.git"
+  },
+  "main": "./extension.js",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "scripts": {
+    "package": "vsce package",
+    "install-local": "code --install-extension *.vsix --force"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.2"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "promptx",
+    "prompt",
+    "ai",
+    "syntax"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "promptx",
+        "aliases": [
+          "PromptX",
+          "promptx"
+        ],
+        "extensions": [
+          ".promptx"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "promptx",
+        "scopeName": "source.promptx",
+        "path": "./syntaxes/promptx.tmLanguage.json"
+      }
+    ]
+  }
+}
