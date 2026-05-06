@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace Zionet.Shared.Prompting.Parsing;
+namespace Zionet.Prompting.Parsing;
 
 /// <summary>
 /// Extracts {{variable}} names referenced inside a prompt body or chat-message content.

@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Models;
+namespace Zionet.Prompting.Models;
 
 /// <summary>
 /// Internal representation of a parsed and validated .promptx file.

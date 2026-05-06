@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Exceptions;
+namespace Zionet.Prompting.Exceptions;
 
 /// <summary>
 /// Thrown when frontmatter metadata fails JSON Schema validation (missing required fields, unknown properties, bad enum values, ...).

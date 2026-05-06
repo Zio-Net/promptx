@@ -1,7 +1,7 @@
-using Zionet.Shared.Prompting.Exceptions;
-using Zionet.Shared.Prompting.Models;
+using Zionet.Prompting.Exceptions;
+using Zionet.Prompting.Models;
 
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// File-based implementation of <see cref="IPromptService"/>. Returns raw, un-rendered content

@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
-using Zionet.Shared.Prompting.Exceptions;
+using Zionet.Prompting.Exceptions;
 
-namespace Zionet.Shared.Prompting.Parsing;
+namespace Zionet.Prompting.Parsing;
 
 /// <summary>
 /// Parses a chat-style prompt body into ordered role/content blocks.

@@ -4,9 +4,9 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <RootNamespace>Zionet.Shared.Prompting</RootNamespace>
+    <RootNamespace>Zionet.Prompting</RootNamespace>
 
-    <PackageId>Zionet.Shared.Prompting</PackageId>
+    <PackageId>Zionet.Prompting</PackageId>
     <Version>1.0.0</Version>
     <Authors>Zionet</Authors>
     <Company>Zionet</Company>

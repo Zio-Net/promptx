@@ -2,7 +2,7 @@
 
 VS Code language support for `.promptx` files — the prompt format used by AIEngine.
 
-This extension remains a separate internal VS Code project. The runtime PromptX parsing/validation library lives in `Libs/Zionet.Shared.Prompting`, which is the private backend package.
+This extension remains a separate internal VS Code project. The runtime PromptX parsing/validation library lives in `Libs/Zionet.Prompting`, which is the private backend package.
 
 Once installed, any file ending in `.promptx` is recognized as a PromptX document with syntax highlighting and inline diagnostics.
 
@@ -112,7 +112,7 @@ The extension reports errors directly in the editor for:
 
 ## Shared Source Of Truth
 
-The canonical PromptX schema now lives in `Libs/Zionet.Shared.Prompting/Assets/Schemas/promptx.schema.json`.
+The canonical PromptX schema now lives in `Libs/Zionet.Prompting/Assets/Schemas/promptx.schema.json`.
 
 Keep editor validation rules in this extension aligned with that shared schema and the backend prompting library.
 

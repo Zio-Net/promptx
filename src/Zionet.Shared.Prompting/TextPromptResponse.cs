@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// Response shape for a text-style prompt. Mirrors PromptProvider's TextPromptResponse.

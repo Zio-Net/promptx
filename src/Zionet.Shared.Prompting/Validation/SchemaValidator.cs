@@ -1,11 +1,11 @@
 using System.Globalization;
 using System.Text;
 using System.Text.Json;
-using Zionet.Shared.Prompting.Exceptions;
+using Zionet.Prompting.Exceptions;
 using NJsonSchema;
 using YamlDotNet.RepresentationModel;
 
-namespace Zionet.Shared.Prompting.Validation;
+namespace Zionet.Prompting.Validation;
 
 /// <summary>
 /// Validates a YAML frontmatter document against the .promptx JSON Schema.

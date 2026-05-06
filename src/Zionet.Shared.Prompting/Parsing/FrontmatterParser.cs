@@ -1,8 +1,8 @@
-using Zionet.Shared.Prompting.Exceptions;
-using Zionet.Shared.Prompting.Models;
+using Zionet.Prompting.Exceptions;
+using Zionet.Prompting.Models;
 using YamlDotNet.RepresentationModel;
 
-namespace Zionet.Shared.Prompting.Parsing;
+namespace Zionet.Prompting.Parsing;
 
 /// <summary>
 /// Parses YAML frontmatter into the strongly-typed metadata fields of a <see cref="PromptDefinition"/>.

@@ -1,9 +1,9 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using Zionet.Shared.Prompting.Exceptions;
-using Zionet.Shared.Prompting.Models;
+using Zionet.Prompting.Exceptions;
+using Zionet.Prompting.Models;
 
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// Loads and validates per-prompt folder configuration from config.json.

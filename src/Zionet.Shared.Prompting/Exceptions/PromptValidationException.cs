@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Exceptions;
+namespace Zionet.Prompting.Exceptions;
 
 /// <summary>
 /// Thrown when a prompt is structurally valid but semantically inconsistent

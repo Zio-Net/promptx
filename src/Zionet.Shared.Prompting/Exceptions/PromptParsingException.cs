@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Exceptions;
+namespace Zionet.Prompting.Exceptions;
 
 /// <summary>
 /// Thrown when a .promptx file is structurally malformed (missing frontmatter delimiters, invalid YAML, etc.).

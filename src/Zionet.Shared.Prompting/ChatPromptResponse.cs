@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// Response shape for a chat-style prompt. Mirrors PromptProvider's ChatPromptResponse.

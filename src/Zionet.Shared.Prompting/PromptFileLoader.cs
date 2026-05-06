@@ -1,10 +1,10 @@
 using System.Collections.Concurrent;
-using Zionet.Shared.Prompting.Exceptions;
-using Zionet.Shared.Prompting.Models;
-using Zionet.Shared.Prompting.Parsing;
-using Zionet.Shared.Prompting.Validation;
+using Zionet.Prompting.Exceptions;
+using Zionet.Prompting.Models;
+using Zionet.Prompting.Parsing;
+using Zionet.Prompting.Validation;
 
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// Loads, parses, validates, and caches PromptDefinition instances from .promptx files on disk.

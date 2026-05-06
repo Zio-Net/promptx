@@ -1,6 +1,6 @@
-using Zionet.Shared.Prompting.Exceptions;
+using Zionet.Prompting.Exceptions;
 
-namespace Zionet.Shared.Prompting.Parsing;
+namespace Zionet.Prompting.Parsing;
 
 /// <summary>
 /// Splits a .promptx file into raw YAML frontmatter and the body that follows it.

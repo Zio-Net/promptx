@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Models;
+namespace Zionet.Prompting.Models;
 
 /// <summary>
 /// Discriminator for the prompt body shape.

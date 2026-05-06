@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Exceptions;
+namespace Zionet.Prompting.Exceptions;
 
 /// <summary>
 /// Base type for all file-prompt errors. Allows callers to catch the whole family at once.

@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Exceptions;
+namespace Zionet.Prompting.Exceptions;
 
 /// <summary>
 /// Thrown when a prompt key cannot be resolved to a single file

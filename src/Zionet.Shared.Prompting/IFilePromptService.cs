@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// File-based prompt service. Mirrors the shape of the PromptProvider package's IPromptService

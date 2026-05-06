@@ -2,7 +2,7 @@ using System.Text.Json;
 using Microsoft.Extensions.AI;
 using Stubble.Core.Builders;
 
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// Handles parsing and rendering of Langfuse prompts.

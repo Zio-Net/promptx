@@ -1,7 +1,7 @@
-using Zionet.Shared.Prompting.Exceptions;
-using Zionet.Shared.Prompting.Models;
+using Zionet.Prompting.Exceptions;
+using Zionet.Prompting.Models;
 
-namespace Zionet.Shared.Prompting;
+namespace Zionet.Prompting;
 
 /// <summary>
 /// Resolves a slash-style prompt key (e.g. "chat/qa") to a concrete file path under the prompts root.

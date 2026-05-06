@@ -1,4 +1,4 @@
-namespace Zionet.Shared.Prompting.Models;
+namespace Zionet.Prompting.Models;
 
 /// <summary>
 /// Per-prompt folder configuration that drives default-version and label resolution.

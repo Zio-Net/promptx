@@ -1,7 +1,7 @@
-using Zionet.Shared.Prompting.Exceptions;
-using Zionet.Shared.Prompting.Models;
+using Zionet.Prompting.Exceptions;
+using Zionet.Prompting.Models;
 
-namespace Zionet.Shared.Prompting.Validation;
+namespace Zionet.Prompting.Validation;
 
 /// <summary>
 /// Placeholder for PromptX checks that are not enforced by the JSON schema.
