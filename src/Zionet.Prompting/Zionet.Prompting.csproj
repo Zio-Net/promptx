@@ -25,6 +25,7 @@
     <Content Include="Assets\Schemas\promptx.schema.json">
       <Pack>true</Pack>
       <PackagePath>contentFiles/any/any/Zionet.Prompting/Prompting/Schemas/</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>Zionet.Prompting\Prompting\Schemas\promptx.schema.json</Link>
     </Content>
