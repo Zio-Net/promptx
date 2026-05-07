@@ -30,19 +30,19 @@ jobs:
           if [ -n "${{ github.event.inputs.version }}" ]; then
               echo "version=${{ github.event.inputs.version }}" >> "$GITHUB_OUTPUT"
           else
-              VERSION=$(grep -oP '(?<=<Version>)[^<]+' src/Zionet.Shared.Prompting/Zionet.Shared.Prompting.csproj)
+              VERSION=$(grep -oP '(?<=<Version>)[^<]+' src/Zionet.Prompting/Zionet.Prompting.csproj)
               echo "version=$VERSION" >> "$GITHUB_OUTPUT"
           fi
           echo "Using version: $(grep version $GITHUB_OUTPUT | cut -d= -f2)"
 
       - name: Restore
-        run: dotnet restore src/Zionet.Shared.Prompting
+        run: dotnet restore src/Zionet.Prompting
 
       - name: Build
-        run: dotnet build src/Zionet.Shared.Prompting --configuration Release --no-restore -p:Version=${{ steps.version.outputs.version }}
+        run: dotnet build src/Zionet.Prompting --configuration Release --no-restore -p:Version=${{ steps.version.outputs.version }}
 
       - name: Pack
-        run: dotnet pack src/Zionet.Shared.Prompting --configuration Release --no-build --output nupkg -p:Version=${{ steps.version.outputs.version }}
+        run: dotnet pack src/Zionet.Prompting --configuration Release --no-build --output nupkg -p:Version=${{ steps.version.outputs.version }}
 
       - name: Publish to GitHub Packages
         run: |

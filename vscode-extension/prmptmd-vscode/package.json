@@ -1,0 +1,57 @@
+{
+  "name": "prmptmd-vscode",
+  "displayName": "PrmptMD",
+  "description": "Syntax highlighting and validation for structured prompt files in Visual Studio Code",
+  "version": "0.4.0",
+  "publisher": "Zion-Net",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zio-Net/prmptMD.git"
+  },
+  "main": "./extension.js",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "scripts": {
+    "package": "vsce package",
+    "install-local": "code --install-extension *.vsix --force"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.6.2"
+  },
+  "dependencies": {
+    "yaml": "^2.8.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "prmptmd",
+    "prompt",
+    "ai",
+    "syntax"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "prmptmd",
+        "aliases": [
+          "PrmptMD",
+          "prmptmd"
+        ],
+        "extensions": [
+          ".prmpt.md"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "prmptmd",
+        "scopeName": "source.prmptmd",
+        "path": "./syntaxes/prmptmd.tmLanguage.json"
+      }
+    ]
+  }
+}
