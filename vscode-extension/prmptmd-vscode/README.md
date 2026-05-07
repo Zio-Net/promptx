@@ -143,3 +143,7 @@ code --install-extension prmptmd-vscode-0.4.0.vsix --force
 ```
 
 Then reload VS Code (*Developer: Reload Window*) and open any `.prmpt.md` file to verify highlighting and diagnostics.
+
+## License
+
+MIT
