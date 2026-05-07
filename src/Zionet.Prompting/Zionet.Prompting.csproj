@@ -7,7 +7,7 @@
     <RootNamespace>Zionet.Prompting</RootNamespace>
 
     <PackageId>Zionet.Prompting</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <Authors>Zionet</Authors>
     <Company>Zionet</Company>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -22,12 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\Schemas\promptx.schema.json">
+    <Content Include="Assets\Schemas\prmptmd.schema.json">
       <Pack>true</Pack>
       <PackagePath>contentFiles/any/any/Zionet.Prompting/Prompting/Schemas/</PackagePath>
       <PackageCopyToOutput>true</PackageCopyToOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Link>Zionet.Prompting\Prompting\Schemas\promptx.schema.json</Link>
+      <Link>Zionet.Prompting\Prompting\Schemas\prmptmd.schema.json</Link>
     </Content>
   </ItemGroup>
 

@@ -1,7 +1,7 @@
 namespace Zionet.Prompting.Models;
 
 /// <summary>
-/// Internal representation of a parsed and validated .promptx file.
+/// Internal representation of a parsed and validated .prmpt.md file.
 /// </summary>
 internal sealed record PromptDefinition
 {

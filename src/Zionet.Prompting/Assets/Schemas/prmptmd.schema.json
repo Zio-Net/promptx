@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "PromptX Frontmatter",
-  "description": "Schema for the YAML frontmatter of a .promptx prompt file.",
+  "title": "PrmptMD Frontmatter",
+  "description": "Schema for the YAML frontmatter of a .prmpt.md prompt file.",
   "type": "object",
   "required": ["type"],
   "properties": {

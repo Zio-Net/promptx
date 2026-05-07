@@ -1,4 +1,0 @@
-UNLICENSED
-
-This local PromptX extension project is intended for internal use in the iTeach-Avatar repository.
-No license is granted for external redistribution.

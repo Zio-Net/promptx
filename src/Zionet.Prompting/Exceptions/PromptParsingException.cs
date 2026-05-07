@@ -1,7 +1,7 @@
 namespace Zionet.Prompting.Exceptions;
 
 /// <summary>
-/// Thrown when a .promptx file is structurally malformed (missing frontmatter delimiters, invalid YAML, etc.).
+/// Thrown when a .prmpt.md file is structurally malformed (missing frontmatter delimiters, invalid YAML, etc.).
 /// </summary>
 public sealed class PromptParsingException : PromptException
 {

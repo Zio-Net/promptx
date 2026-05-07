@@ -25,7 +25,7 @@ A PrmptMD file has two parts:
 
 ### Frontmatter
 
-```
+```prmptmd
 ---
 description: Short human-readable description of what this prompt does.
 type: chat
@@ -51,7 +51,7 @@ The prompt **name** comes from the containing folder name, and the prompt **vers
 
 The body is plain text. It may reference variables using `{{name}}`:
 
-```
+```prmptmd
 ---
 description: Summarize a piece of text in a target word count.
 type: prompt
@@ -73,7 +73,7 @@ The body is a sequence of role blocks. Each block starts with one of the followi
 
 Everything until the next role label belongs to that block. Roles may repeat. Anything before the first role label must be blank.
 
-```
+```prmptmd
 ---
 description: Simple Q and A prompt with multiple role blocks.
 type: chat

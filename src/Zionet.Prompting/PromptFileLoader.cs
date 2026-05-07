@@ -7,7 +7,7 @@ using Zionet.Prompting.Validation;
 namespace Zionet.Prompting;
 
 /// <summary>
-/// Loads, parses, validates, and caches PromptDefinition instances from .promptx files on disk.
+/// Loads, parses, validates, and caches PromptDefinition instances from .prmpt.md files on disk.
 /// </summary>
 internal sealed class PromptFileLoader
 {

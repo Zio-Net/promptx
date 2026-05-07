@@ -3,7 +3,7 @@ using Zionet.Prompting.Exceptions;
 namespace Zionet.Prompting.Parsing;
 
 /// <summary>
-/// Splits a .promptx file into raw YAML frontmatter and the body that follows it.
+/// Splits a .prmpt.md file into raw YAML frontmatter and the body that follows it.
 /// </summary>
 internal static class FrontmatterSplitter
 {

@@ -4,7 +4,7 @@ using Zionet.Prompting.Models;
 namespace Zionet.Prompting.Validation;
 
 /// <summary>
-/// Placeholder for PromptX checks that are not enforced by the JSON schema.
+/// Placeholder for PrmptMD checks that are not enforced by the JSON schema.
 /// </summary>
 internal static class SemanticValidator
 {

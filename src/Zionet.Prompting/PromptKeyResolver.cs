@@ -5,7 +5,7 @@ namespace Zionet.Prompting;
 
 /// <summary>
 /// Resolves a slash-style prompt key (e.g. "chat/qa") to a concrete file path under the prompts root.
-/// File layout: {root}/{folder1}/{folder2}/.../{name}/{vN}.promptx.
+/// File layout: {root}/{folder1}/{folder2}/.../{name}/{vN}.prmpt.md.
 /// </summary>
 public sealed class PromptKeyResolver
 {
@@ -62,7 +62,7 @@ public sealed class PromptKeyResolver
 
         var config = _configLoader.Load(folder, normalizedKey);
         var selectedVersion = version ?? ResolveConfiguredVersion(config, normalizedKey, label);
-        var file = Path.Combine(folder, $"v{selectedVersion}.promptx");
+        var file = Path.Combine(folder, $"v{selectedVersion}.prmpt.md");
 
         if (File.Exists(file))
         {

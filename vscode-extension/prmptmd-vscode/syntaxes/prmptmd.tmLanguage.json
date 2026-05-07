@@ -1,6 +1,6 @@
 {
-  "scopeName": "source.promptx",
-  "name": "PromptX",
+  "scopeName": "source.prmptmd",
+  "name": "PrmptMD",
   "patterns": [
     {
       "include": "#frontmatter"
@@ -19,16 +19,16 @@
           "begin": "\\A---\\s*$",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.frontmatter.begin.promptx"
+              "name": "punctuation.definition.frontmatter.begin.prmptmd"
             }
           },
           "end": "^---\\s*$",
           "endCaptures": {
             "0": {
-              "name": "punctuation.definition.frontmatter.end.promptx"
+              "name": "punctuation.definition.frontmatter.end.prmptmd"
             }
           },
-          "name": "meta.frontmatter.promptx",
+          "name": "meta.frontmatter.prmptmd",
           "patterns": [
             {
               "include": "source.yaml"
@@ -43,14 +43,14 @@
           "begin": "^(system|user|assistant|developer)(:)([ \\t]*)$",
           "beginCaptures": {
             "1": {
-              "name": "keyword.control.promptx"
+              "name": "keyword.control.prmptmd"
             },
             "2": {
-              "name": "punctuation.separator.key-value.promptx"
+              "name": "punctuation.separator.key-value.prmptmd"
             }
           },
           "end": "(?=^(?:system|user|assistant|developer):[ \\t]*$)|\\z",
-          "name": "meta.block.promptx",
+          "name": "meta.block.prmptmd",
           "patterns": [
             {
               "include": "#variables"
@@ -65,10 +65,10 @@
           "match": "\\{\\{\\s*([A-Za-z_][A-Za-z0-9_]*)\\s*\\}\\}",
           "captures": {
             "1": {
-              "name": "variable.other.promptx"
+              "name": "variable.other.prmptmd"
             }
           },
-          "name": "meta.interpolation.promptx"
+          "name": "meta.interpolation.prmptmd"
         }
       ]
     }

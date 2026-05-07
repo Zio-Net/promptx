@@ -1,0 +1,9 @@
+UNLICENSED
+
+Copyright (c) Zion-Net.
+
+All rights reserved.
+
+This software is provided for viewing and use only as permitted by applicable law.
+No license is granted for copying, modification, distribution, sublicensing, or resale
+without prior written permission from the copyright holder.

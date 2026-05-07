@@ -9,10 +9,10 @@ const indentedRolePattern = /^\s+(system|user|assistant|developer):[ \t]*$/;
 const unknownRolePattern = /^([A-Za-z_][A-Za-z0-9_-]*):[ \t]*$/;
 
 function activate(context) {
-  const diagnostics = languages.createDiagnosticCollection('promptx');
+  const diagnostics = languages.createDiagnosticCollection('prmptmd');
 
   const validateDocument = document => {
-    if (!isPromptxDocument(document)) {
+    if (!isPrmptmdDocument(document)) {
       return;
     }
 
@@ -32,8 +32,8 @@ function activate(context) {
 function deactivate() {
 }
 
-function isPromptxDocument(document) {
-  return document.languageId === 'promptx' || document.fileName.toLowerCase().endsWith('.promptx');
+function isPrmptmdDocument(document) {
+  return document.languageId === 'prmptmd' || document.fileName.toLowerCase().endsWith('.prmpt.md');
 }
 
 function collectDiagnostics(document) {
@@ -53,7 +53,7 @@ function splitFrontmatter(document, diagnostics) {
   if (document.lineCount === 0 || document.lineAt(0).text !== '---') {
     diagnostics.push(createDiagnostic(
       firstLineRange(document),
-      "PromptX file must start with '---' on the first line."
+      "PrmptMD file must start with '---' on the first line."
     ));
     return null;
   }
@@ -69,7 +69,7 @@ function splitFrontmatter(document, diagnostics) {
   if (closingLine < 0) {
     diagnostics.push(createDiagnostic(
       document.lineAt(0).range,
-      "PromptX file is missing the closing '---' frontmatter delimiter."
+      "PrmptMD file is missing the closing '---' frontmatter delimiter."
     ));
     return null;
   }
@@ -162,7 +162,7 @@ function createUnknownFrontmatterMessage(keyText) {
   }
 
   if (keyText === 'version') {
-    return "Frontmatter field 'version' is no longer supported. Prompt version comes from the file name, for example v1.promptx.";
+    return "Frontmatter field 'version' is no longer supported. Prompt version comes from the file name, for example v1.prmpt.md.";
   }
 
   return `Unknown frontmatter field '${keyText}'. Allowed fields: description, type.`;

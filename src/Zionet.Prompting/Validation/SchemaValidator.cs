@@ -8,7 +8,7 @@ using YamlDotNet.RepresentationModel;
 namespace Zionet.Prompting.Validation;
 
 /// <summary>
-/// Validates a YAML frontmatter document against the .promptx JSON Schema.
+/// Validates a YAML frontmatter document against the .prmpt.md JSON Schema.
 /// </summary>
 internal sealed class SchemaValidator
 {
